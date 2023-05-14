@@ -12,5 +12,5 @@ def test3_m2():
     assert  a!=b
 def test4_m3():
     a=3
-    b=3
+    b=4
     assert a==b
