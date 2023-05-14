@@ -6,3 +6,7 @@ def test1_m():
 def test2_m1():
     n="malik"
     assert n.upper()=="MALIK"
+def test3_m2():
+    a = "malik"
+    b= "nadeem"
+    assert  a==b
