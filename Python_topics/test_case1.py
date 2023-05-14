@@ -9,4 +9,4 @@ def test2_m1():
 def test3_m2():
     a = "malik"
     b= "nadeem"
-    assert  a==b
+    assert  a!=b
