@@ -40,10 +40,10 @@ jobs:
         python -m pip install pytest-html
     - name: Test with pytest
       run: |
-        pytest test_case1.py --html=report.html
+        py.test --html=report1.html
     - name: Upload report as artifact
       uses: actions/upload-artifact@v2
       with:
-          name: Report
-          path: report.html    
+          name: Report1
+          path: report1.html    
 
