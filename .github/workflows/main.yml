@@ -45,7 +45,7 @@ jobs:
       run: |
         py.test --html=report.html
     - name: Upload report as artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: success() || failure()
       with:
         name: Report
