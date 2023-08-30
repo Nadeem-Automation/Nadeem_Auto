@@ -47,7 +47,7 @@ jobs:
     - name: Upload report as artifact
       uses: actions/upload-artifact@v3
       if: always()
-      continue-on-error: True
+      # continue-on-error: True
       with:
         name: Report
         path: report.html    
