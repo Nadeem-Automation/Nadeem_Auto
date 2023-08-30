@@ -14,4 +14,5 @@ def test_login():
     driver.implicitly_wait(10)
     driver.get("https://google.com")
     assert driver.title == "Google"
+    assert driver.title == "asdfasdf"
     driver.close()
