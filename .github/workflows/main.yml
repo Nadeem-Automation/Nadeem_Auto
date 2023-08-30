@@ -45,9 +45,8 @@ jobs:
       run: |
         py.test --html=report.html
     - name: Upload report as artifact
-      uses: actions/upload-artifact@v3
       if: always()
-      # continue-on-error: True
+      uses: actions/upload-artifact@v2
       with:
         name: Report
         path: report.html    
