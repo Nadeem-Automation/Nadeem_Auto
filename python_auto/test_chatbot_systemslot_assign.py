@@ -11,6 +11,6 @@ def test_chatbot_system_slot_assign(page:Page):
     page.get_by_placeholder("Enter password").fill("Password@1")
     page.get_by_role("button").click()
     
-    time.sleep(3)
+    time.sleep(2)
 
 
