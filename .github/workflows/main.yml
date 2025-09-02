@@ -63,9 +63,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./reports/allure-report
-          external_repository: Nadeem-Automation/allure-reports
           publish_branch: gh-pages
+          publish_dir: ./reports/allure-report
+
 
       # Send email with public URL instead of attachment
       - name: Send Email Notification
@@ -85,4 +85,4 @@ jobs:
             View the Allure report here:
             https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
 
-            https://nadeem-automation.github.io/allure-reports/
+            
