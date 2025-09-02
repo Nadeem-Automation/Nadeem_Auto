@@ -56,7 +56,7 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.AUTO_TOKEN }}
           publish_dir: allure-report
 
       # Send email with public URL instead of attachment
@@ -69,8 +69,8 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "GitHub Actions Test Result"
-          to: ${{ secrets.TESTER1 }}
-          from: "GitHub Actions <your_email@gmail.com>"
+          to: mmlaliknadeem11@gmail.com
+          from: "GitHub Actions <testing1mna@gmail.com>"
           body: |
             The Test suite has completed 
 
