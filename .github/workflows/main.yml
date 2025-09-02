@@ -27,6 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install -r requirements.txt
           python -m pip install --upgrade pip
           python -m pip install flake8 pytest selenium
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
@@ -53,11 +54,11 @@ jobs:
 
       # Deploy the report to GitHub Pages
       - name: Deploy Allure Report to GitHub Pages
-        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.AUTO_TOKEN }}
-          publish_dir: allure-report
+          publish_dir: ./reports/allure-report
+
 
       # Send email with public URL instead of attachment
       - name: Send Email Notification
@@ -70,7 +71,7 @@ jobs:
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "GitHub Actions Test Result"
           to: mmaliknadeem11@gmail.com
-          from: "GitHub Actions <testing1mna@gmail.com>"
+          from: GitHub Actions <testing1mna@gmail.com>
           body: |
             The Test suite has completed 
 
