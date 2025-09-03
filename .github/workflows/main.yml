@@ -77,7 +77,10 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "GitHub Actions Test Result"
-          to: mmaliknadeem11@gmail.com, anshu.sharma@telusinternational.com
+          to: |
+            mmaliknadeem11@gmail.com,
+            anshu.sharma@telusinternational.com,
+            
           from: GitHub Actions <testing1mna@gmail.com>
           body: |
             The test case has completed ✅
