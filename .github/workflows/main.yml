@@ -79,7 +79,7 @@ jobs:
           subject: "GitHub Actions Test Result"
           to: |
             mmaliknadeem11@gmail.com,
-            anshu.sharma@telusinternational.com,
+            puchha.pavan@telusinternational.com,
             
           from: GitHub Actions <testing1mna@gmail.com>
           body: |
